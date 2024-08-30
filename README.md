@@ -1,19 +1,20 @@
-## First Create a user in AWS IAM with any name
-## Attach Policies to the newly created user
-## below policies
-AmazonEC2FullAccess
+# Setup Infra
 
-AmazonEKS_CNI_Policy
+## First Create a user in AWS IAM with any name, then attach Policies to the newly created user
 
-AmazonEKSClusterPolicy	
+- AmazonEC2FullAccess
 
-AmazonEKSWorkerNodePolicy
+- AmazonEKS_CNI_Policy
 
-AWSCloudFormationFullAccess
+- AmazonEKSClusterPolicy	
 
-IAMFullAccess
+- AmazonEKSWorkerNodePolicy
 
-#### One more policy we need to create with content as below
+- AWSCloudFormationFullAccess
+
+- IAMFullAccess
+
+- One more policy we need to create with content as below
 ```json
 {
     "Version": "2012-10-17",
@@ -27,9 +28,6 @@ IAMFullAccess
     ]
 }
 ```
-Attach this policy to your user as well
-
-![Policies To Attach](https://github.com/jaiswaladi246/Microservice/blob/Infra-Steps/Policies.png)
 
 # AWSCLI
 
